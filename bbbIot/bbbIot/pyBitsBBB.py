@@ -31,7 +31,6 @@ class TalkToAPi:
 	def __init__(self):
 		'''constructor 
 		'''
-		GPIO.setmode(GPIO.BOARD)	# setup GPIO using Board numbering
 		GPIO.setup(SWITCH_PIN, GPIO.IN)
 		GPIO.setup(LED_PIN, GPIO.OUT)
 
