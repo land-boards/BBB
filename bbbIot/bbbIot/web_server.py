@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask
-from pyBits import TalkToAPi
+from pyBitsBBB import TalkToAPi
 app = Flask(__name__)
 
 HTML_TEMPLATE = """
