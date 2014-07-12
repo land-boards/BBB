@@ -25,7 +25,7 @@ J37 = "GPIO1_29"
 
 def blinkLED(channel):
 	GPIO.output(channel, GPIO.HIGH)
-	time.sleep(0.5)
+	time.sleep(0.1)
 	GPIO.output(channel, GPIO.LOW)
 	
 GPIO.setup(J8P3, GPIO.OUT)
