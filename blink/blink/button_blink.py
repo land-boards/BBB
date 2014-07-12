@@ -69,4 +69,4 @@ while GPIO.input(J37):
 	# blinkLED(J26)
 	# blinkLED(J27)
 	# blinkLED(J28)
-	blinkLED(J37)
+	# blinkLED(J37)
