@@ -70,3 +70,5 @@ while GPIO.input(J37):
 	# blinkLED(J27)
 	# blinkLED(J28)
 	# blinkLED(J37)
+	
+GPIO.cleanup()
