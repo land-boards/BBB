@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 from flask import Flask
-from pyBits import TalkToAPi
+from pyBitsBBB import TalkToAPi
 app = Flask(__name__)
+
+ON_OFF = {
+    True: 'on',
+    False: 'off'
+}
 
 HTML_TEMPLATE = """
 <html>
@@ -16,18 +21,28 @@ HTML_TEMPLATE = """
 def templatize(body):
     return HTML_TEMPLATE % body
 
+def on_off_link(is_on):
+    return '<a href="/led/{0}">Turn LED {0}</a>'.format(ON_OFF[is_on])
+
+def toggle_template(led_is_on):
+    return templatize(
+            ('<h5>Light is %s!</h5>' % ON_OFF[led_is_on]) +
+            on_off_link(not led_is_on))
+
 @app.route('/led')
 def hello_route():
-    return templatize(
-            '<a href="led/on">Turn LED On</a>' +
-            '<br />' +
-            '<a href="led/off">Turn LED Off</a>')
+    return templatize('<br />'.join(on_off_link(i) for i in [True, False]))
 
 @app.route('/led/<state>')
-def turn_led_on_route(state):
-    led_is_on = bool(state == 'on')
+def change_led_route(state):
+    led_is_on = state == 'on'
     TalkToAPi().controlLED(led_is_on)
-    return templatize('<h5>Light is %s!</h5>' % ('on' if led_is_on else 'off'))
+    return toggle_template(led_is_on)
+
+@app.route('/switch')
+def check_switch_route():
+    switch_value = TalkToAPi().getSwitchValue()
+    return templatize('the switch is ' + ON_OFF[switch_value])
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
