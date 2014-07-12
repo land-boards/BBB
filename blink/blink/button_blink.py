@@ -49,7 +49,7 @@ GPIO.setup(J27, GPIO.OUT)
 GPIO.setup(J28, GPIO.OUT)
 GPIO.setup(J37, GPIO.IN)
 
-while GPIO.IN(J37):
+while GPIO.input(J37):
 	# blinkLED(J8P3)
 	# blinkLED(J9P3)
 	# blinkLED(J9P4)
