@@ -1,5 +1,6 @@
 import Adafruit_BBIO.PWM as PWM
 import Adafruit_BBIO.GPIO as GPIO
+import time
 
 J8P3 = "GPIO3_16"	# ground pin is at wrong end
 J9P3 = "GPIO0_15"	# UART1 Tx
