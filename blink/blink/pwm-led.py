@@ -33,7 +33,7 @@ GPIO.setup(J37, GPIO.IN)
 while GPIO.input(J37):
 	PWM.set_duty_cycle("P8_19", dutyCycle)
 	time.sleep(0.1)
-	dutyCycle += 1.0
+	dutyCycle += 5.0
 	if dutyCycle > 100.0:
 		dutyCycle = 0
 
