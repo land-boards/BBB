@@ -22,6 +22,12 @@ J27 = "GPIO2_3"		# TIMER7
 J28 = "GPIO2_2"		# TIMER4
 J37 = "GPIO1_29"
 
+
+def blinkLED(channel):
+	GPIO.output(channel, GPIO.HIGH)
+	time.sleep(0.5)
+	GPIO.output(channel, GPIO.LOW)
+	
 GPIO.setup(J8P3, GPIO.OUT)
 GPIO.setup(J9P3, GPIO.OUT)
 GPIO.setup(J9P4, GPIO.OUT)
@@ -64,10 +70,3 @@ while True:
 	blinkLED(J27)
 	blinkLED(J28)
 	blinkLED(J37)
-
-def blinkLED(channel):
-	GPIO.output(channel, GPIO.HIGH)
-	time.sleep(0.5)
-	GPIO.output(channel, GPIO.LOW)
-	
-	
