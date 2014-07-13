@@ -7,6 +7,7 @@ class AnalogMenu(Menu):
     def __init__(self, screen, jack_to_analog):
         Menu.__init__(self, screen)
         self.jack_to_analog = jack_to_analog
+        ADC.setup()
 
     def set_parent(self, parent):
         self.main_menu = parent
