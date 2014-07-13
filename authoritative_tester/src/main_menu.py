@@ -24,8 +24,9 @@ class MainMenu(Menu):
 
     def if_enter_show_option(self):
         if self.key_pressed == 67:
-            self.current_menu().set_parent(self)
-            self.current_menu().show()
+            menu = self.build_current_menu()
+            menu.set_parent(self)
+            menu.show()
 
     def update_highlighted_if_necessary(self):
         if self.key_pressed == 65:
@@ -33,8 +34,8 @@ class MainMenu(Menu):
         if self.key_pressed == 66:
             self.highlight_index = (self.highlight_index + 1) % self.len_options()
 
-    def current_menu(self):
-        return self.options[self.options.keys()[self.highlight_index]]
+    def build_current_menu(self):
+        return self.options[self.options.keys()[self.highlight_index]]()
 
     def len_options(self):
         return len(self.options)
