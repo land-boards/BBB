@@ -2,6 +2,8 @@ import Adafruit_BBIO.ADC as ADC
 import Adafruit_BBIO.GPIO as GPIO
 import time
 
+J37 = "GPIO1_29"
+
 GPIO.setup(J37, GPIO.IN)
 
 ADC.setup()
