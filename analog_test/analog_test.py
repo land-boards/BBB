@@ -16,7 +16,7 @@ if __name__ == '__main__':
         pressed_key = screen.getch()
         screen.clear()
         for i, input_line in enumerate(INPUT_LINES):
-            screen.addstr(i, 0, (JACK_FORMAT % (i+1)) + ': ' + ADC.read(input_line))
+            screen.addstr(i, 0, (JACK_FORMAT % (i+1)) + ': ' + str(ADC.read(input_line)))
         screen.addstr(len(INPUT_LINES)+1, 0, 'Hit "%s" to quit: ' % EXIT_KEY_NAME)
 
         screen.refresh()
