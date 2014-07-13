@@ -1,0 +1,5 @@
+INPUT_LINES = ['AIN1', 'AIN3', 'AIN5', 'AIN4', 'AIN0', 'AIN2', 'AIN6']
+
+JACK_FORMAT = 'J%d'
+
+EXIT_KEY_NAME = 'q'
