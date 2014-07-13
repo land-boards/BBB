@@ -16,14 +16,14 @@ class GpioBlinkMenu(Menu):
 
     def show_text(self):
         self.screen.addstr("Blinking!")
+        self.show_quit(2)
+        self.screen.refresh()
 
         GPIO.output(self.current_gpio(), GPIO.HIGH)
         curses.napms(BLINK_DELAY_MS)
         GPIO.output(self.current_gpio(), GPIO.LOW)
 
         self.move_next()
-
-        self.show_quit(2)
 
     def current_gpio(self):
         return self.jack_to_gpio['J' + str(self.jacks[self.jack_index])]
