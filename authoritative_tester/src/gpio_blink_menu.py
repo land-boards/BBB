@@ -11,22 +11,35 @@ class GpioBlinkMenu(Menu):
             GPIO.setup(gpio, GPIO.OUT)
 
         self.light_is_on = False
-        self.jacks = [int(j[1:]) for j in self.jack_to_gpio.keys()]
+        self.jacks = [self.jack_number(j) for j in self.jack_to_gpio.keys()]
         self.jack_index = 0
 
     def show_text(self):
-        self.screen.addstr("Blinking!")
-        self.show_quit(2)
-        self.screen.refresh()
+        self.show_menu()
 
+        self.blink_current_and_move_next()
+
+    def current_gpio(self):
+        return self.jack_to_gpio[self.current_jack_name]
+
+    def blink_current_and_move_next(self):
         GPIO.output(self.current_gpio(), GPIO.HIGH)
         curses.napms(BLINK_DELAY_MS)
         GPIO.output(self.current_gpio(), GPIO.LOW)
 
         self.move_next()
 
-    def current_gpio(self):
-        return self.jack_to_gpio['J' + str(self.jacks[self.jack_index])]
+
+    def show_menu(self):
+        self.screen.addstr("Blinking!")
+        self.show_quit(2)
+        self.screen.refresh()
+
+    def jack_number(self, jack):
+        return int(jack[1:])
+
+    def current_jack_name(self):
+        'J' + str(self.jacks[self.jack_index])
 
     def move_next(self):
         self.jack_index = (self.jack_index + 1) % len(self.jacks)
