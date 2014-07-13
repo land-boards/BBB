@@ -17,7 +17,7 @@ class AnalogMenu(Menu):
 
 
     def sorted_jacks(self):
-        numbers = sorted(int(j[1:] for j in self.jack_to_analog.keys())
+        numbers = sorted(int(j[1:]) for j in self.jack_to_analog.keys())
         return ['J' + str(n) for n in numbers]
 
     def delay(self):
