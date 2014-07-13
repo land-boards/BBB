@@ -20,7 +20,7 @@ class Menu(object):
             curses.endwin()
 
     def show_quit(self, index):
-        self.screen.addstr(index, 0, 'Hit "%s" to quit: ' % QUIT_CHARACTER)
+        self.screen.addstr(index, 0, 'Hit "%s" to quit' % QUIT_CHARACTER)
 
     def show_text(self):
         raise NotImplementedError('Base classes must implement show_text')
