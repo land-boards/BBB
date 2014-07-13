@@ -20,7 +20,7 @@ class GpioBlinkMenu(Menu):
         self.blink_current_and_move_next()
 
     def current_gpio(self):
-        return self.jack_to_gpio[self.current_jack_name]
+        return self.jack_to_gpio[self.current_jack_name()]
 
     def blink_current_and_move_next(self):
         GPIO.output(self.current_gpio(), GPIO.HIGH)
