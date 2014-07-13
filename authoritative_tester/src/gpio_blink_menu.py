@@ -29,7 +29,6 @@ class GpioBlinkMenu(Menu):
 
         self.move_next()
 
-
     def show_menu(self):
         self.screen.addstr("Blinking!")
         self.show_quit(2)
@@ -39,7 +38,7 @@ class GpioBlinkMenu(Menu):
         return int(jack[1:])
 
     def current_jack_name(self):
-        'J' + str(self.jacks[self.jack_index])
+        return 'J' + str(self.jacks[self.jack_index])
 
     def move_next(self):
         self.jack_index = (self.jack_index + 1) % len(self.jacks)
