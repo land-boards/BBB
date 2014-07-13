@@ -14,7 +14,6 @@ def init_screen():
 if __name__ == '__main__':
     screen = init_screen()
     main_menu = MainMenu(screen, {
-        'Test Analog Jacks': (lambda: AnalogMenu(screen, JACK_TO_ANALOG)),
-        'Foobar': None
+        'Test Analog Jacks': (lambda: AnalogMenu(screen, JACK_TO_ANALOG))
     })
     main_menu.show()
