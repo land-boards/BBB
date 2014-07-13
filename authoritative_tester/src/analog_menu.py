@@ -9,9 +9,6 @@ class AnalogMenu(Menu):
         self.jack_to_analog = jack_to_analog
         ADC.setup()
 
-    def set_parent(self, parent):
-        self.main_menu = parent
-
     def show_text(self):
         for i, jack in enumerate(self.jack_to_analog):
             self.screen.addstr(i, 0, (jack) + ': ' + str(ADC.read(self.jack_to_analog[jack])))

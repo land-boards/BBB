@@ -22,8 +22,11 @@ class Menu(object):
     def show_quit(self, index):
         self.screen.addstr(index, 0, 'Hit "%s" to quit' % QUIT_CHARACTER)
 
-    def show_text(self):
-        raise NotImplementedError('Base classes must implement show_text')
+    def set_parent(self, parent):
+        self.main_menu = parent
 
     def delay(self):
-        raise NotImplementedError('Base classes must implement delay')
+        return MENU_DELAY_MS
+
+    def show_text(self):
+        raise NotImplementedError('Base classes must implement show_text')
