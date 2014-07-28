@@ -1,0 +1,64 @@
+import Adafruit_BBIO.GPIO as GPIO
+import time
+
+#J8 = "GPIO3_16"	# SPI_D1
+J9 = "GPIO3_19"
+J10 = "GPIO1_17"
+#J11P3 = "GPIO1_17"	# UART1_TXD
+#J11P4 = "GPIO1_17"	# UART1_RXD
+#J12P3 = "GPIO0_3"	# UART2 Tx
+#J12P4 = "GPIO0_2"	# UART2 Rx
+#J13P3 = "GPIO0_4"	# I2C 1 SDA
+#J13P4 = "GPIO0_5"	# I2C 1 SCL
+J14 = "GPIO1_16"
+J15 = "GPIO1_28"
+#J16P3 = "GPIO0_3"	# UART4 Tx
+#J16P4 = "GPIO0_2"	# UART4 Rx
+J17 = "GPIO1_29"
+J18 = "GPIO0_22"	# EHRPWM2A
+J19 = "GPIO2_1"
+J20 = "GPIO0_27"
+J21 = "GPIO1_14"
+J22 = "GPIO1_15"
+#J25 = "GPIO0_23"	# EHRPWM2B
+J26 = "GPIO0_26"
+J27 = "GPIO1_13"
+J28 = "GPIO1_12"
+#J29 = "GPIO2_5"		# TIMER5
+#J30 = "GPIO2_3"		# TIMER7
+#J31 = "GPIO2_2"		# TIMER4
+#J32 = "GPIO1_29"	# TIMER6
+
+
+def blinkLED(channel):
+	GPIO.output(channel, GPIO.HIGH)
+	time.sleep(0.1)
+	GPIO.output(channel, GPIO.LOW)
+	
+GPIO.setup(J9, GPIO.OUT)
+GPIO.setup(J10, GPIO.OUT)
+GPIO.setup(J14, GPIO.OUT)
+GPIO.setup(J15, GPIO.OUT)
+GPIO.setup(J17, GPIO.OUT)
+GPIO.setup(J19, GPIO.OUT)
+GPIO.setup(J20, GPIO.OUT)
+GPIO.setup(J21, GPIO.OUT)
+GPIO.setup(J22, GPIO.OUT)
+GPIO.setup(J26, GPIO.OUT)
+GPIO.setup(J27, GPIO.OUT)
+GPIO.setup(J28, GPIO.OUT)
+
+while True:
+	blinkLED(J9)
+	blinkLED(J10)
+	blinkLED(J14)
+	blinkLED(J15)
+	blinkLED(J17)
+	blinkLED(J19)
+	blinkLED(J20)
+	blinkLED(J21)
+	blinkLED(J22)
+	blinkLED(J26)
+	blinkLED(J27)
+	blinkLED(J28)
+	
