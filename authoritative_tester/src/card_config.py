@@ -1,13 +1,18 @@
 CARD_VERSION = 'v2'
 
 JACK_TO_GPIO = {
-    'J11': 'GPIO1_17',
+    'J9': 'GPIO3_19',
+    'J10': 'GPIO1_17',
+    'J17': 'GPIO1_29',
+    'J19': 'GPIO2_1',
+    'J20': 'GPIO0_27',
+    'J21': 'GPIO1_14',
+    'J22': 'GPIO1_15',
     'J14': 'GPIO1_16',
     'J15': 'GPIO1_28',
-    'J21': 'GPIO0_27',
-    'J22': 'GPIO2_1',
-    'J23': 'GPIO1_15',
-    'J37': 'GPIO1_29'
+    'J26': 'GPIO0_26',
+    'J27': 'GPIO1_13',
+    'J28': 'GPIO1_12',
 }
 
 JACK_TO_PWM = {
