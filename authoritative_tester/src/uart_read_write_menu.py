@@ -46,16 +46,16 @@ class UcartReadWriteMenu(Menu):
             UART.setup(uart)
 
     def uart_to_device(self, uart):
-       return '/dev/tty0' + uart[-1]
+        return '/dev/tty0' + uart[-1]
 
-   def current_tx(self):
-       return self.txs[self.uart_index]
+    def current_tx(self):
+        return self.txs[self.uart_index]
 
-   def current_rx(self):
-       return self.tx_to_rx[self.current_tx()]
+    def current_rx(self):
+        return self.tx_to_rx[self.current_tx()]
 
-   def move_next(self):
-       self.uart_index = (self.uart_index + 1) % len(self.tx_to_rx)
+    def move_next(self):
+        self.uart_index = (self.uart_index + 1) % len(self.tx_to_rx)
 
     def show_menu(self):
         self.screen.addstr(self.current_tx() + ' -> ' + self.current_rx())
