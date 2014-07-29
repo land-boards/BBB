@@ -7,7 +7,7 @@ class PwmDimMenu(Menu):
     def __init__(self, screen, jack_to_pwm):
         Menu.__init__(self, screen)
         self.jack_to_pwm = jack_to_pwm
-        self.jacks = self.jacks_to_pwm.keys()
+        self.jacks = self.jack_to_pwm.keys()
         self.pwm_index = 0
 
     def show_text(self):
