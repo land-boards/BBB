@@ -4,7 +4,7 @@ import Adafruit_BBIO.UART as UART
 import curses
 import serial
 
-class UArtReadWriteMenu(Menu):
+class UartReadWriteMenu(Menu):
     def __init__(self, screen, tx_to_rx):
         Menu.__init__(self, screen)
         self.tx_to_rx = tx_to_rx
