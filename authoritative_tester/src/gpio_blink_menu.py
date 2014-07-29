@@ -11,7 +11,7 @@ class GpioBlinkMenu(Menu):
             GPIO.setup(gpio, GPIO.OUT)
 
         self.light_is_on = False
-        self.jacks = [self.jack_number(j) for j in self.jack_to_gpio.keys()]
+        self.jacks = sorted(self.jack_number(j) for j in self.jack_to_gpio.keys())
         self.jack_index = 0
 
     def show_text(self):
