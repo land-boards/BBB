@@ -28,16 +28,6 @@ class UartReadWriteMenu(Menu):
         if ser_in.isOpen():
             ser_in.read()
         ser_in.close()
-
-        wait_for_read = 0.0
-        while wait_for_read <= 100.0:
-            self.key_pressed = self.screen.getch()
-            if self.key_pressed == ord(QUIT_CHARACTER):
-                return
-
-            curses.napms(DIM_DELAY_MS)
-            wait_for_read += 5.0
-
         self.move_next()
 
     def setup_uarts(self):
@@ -63,4 +53,4 @@ class UartReadWriteMenu(Menu):
         self.screen.refresh()
 
     def delay(self):
-        return 0
+        return 100
