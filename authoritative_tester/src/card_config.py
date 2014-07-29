@@ -15,6 +15,11 @@ JACK_TO_GPIO = {
     'J28': 'GPIO1_12',
 }
 
+UART_TX_TO_UART_RX = {
+    'UART1': 'UART1',
+    'UART2': 'UART4',
+}
+
 JACK_TO_PWM = {
     'J18': 'P8_19',
 #    'J25': 'P8_13',
