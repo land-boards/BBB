@@ -20,6 +20,9 @@ class PwmDimMenu(Menu):
         PWM.start(self.current_pwm(), duty_cycle, 1000, 1)
 
         while duty_cycle <= 100.0:
+            self.key_pressed = self.screen.getch()
+            if self.key_pressed == ord(QUIT_CHARACTER): return
+
             PWM.set_duty_cycle(self.current_pwm(), duty_cycle)
             curses.napms(DIM_DELAY_MS)
             duty_cycle += DUTY_CYCLE_INCREMENT
