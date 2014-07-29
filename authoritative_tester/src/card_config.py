@@ -17,7 +17,7 @@ JACK_TO_GPIO = {
 
 JACK_TO_PWM = {
     'J18': 'P8_19',
-    'J25': 'P8_13',
+#    'J25': 'P8_13',
 }
 
 JACK_TO_ANALOG = {
