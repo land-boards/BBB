@@ -22,7 +22,7 @@ class PwmDimMenu(Menu):
         while duty_cycle <= 100.0:
             PWM.set_duty_cycle(self.current_pwm(), duty_cycle)
             curses.napms(DIM_DELAY_MS)
-            duty_cycle += 5.0
+            duty_cycle += DUTY_CYCLE_INCREMENT
 
         PWM.stop(self.current_pwm())
         self.move_next()
