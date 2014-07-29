@@ -46,7 +46,7 @@ class UartReadWriteMenu(Menu):
             UART.setup(uart)
 
     def uart_to_device(self, uart):
-        return '/dev/tty0' + uart[-1]
+        return '/dev/ttyO' + uart[-1]
 
     def current_tx(self):
         return self.txs[self.uart_index]
