@@ -26,8 +26,9 @@ class UartReadWriteMenu(Menu):
         ser_in.close()
         ser_in.open()
         if ser_in.isOpen():
-            ser_in.read()
+            ser_in.readline(0.1)
         ser_in.close()
+
         self.move_next()
 
     def setup_uarts(self):
