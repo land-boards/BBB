@@ -56,4 +56,4 @@ class UartReadWriteMenu(Menu):
         self.screen.refresh()
 
     def delay(self):
-        return 1000
+        return 100
