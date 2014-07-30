@@ -22,11 +22,11 @@ class UartReadWriteMenu(Menu):
             ser_out.write("Hello World!")
         ser_out.close()
 
-        ser_in = serial.Serial(port = self.uart_to_device(self.current_rx()), baudrate = 9600)
+        ser_in = serial.Serial(port = self.uart_to_device(self.current_rx()), timeout = 0.1, baudrate = 9600)
         ser_in.close()
         ser_in.open()
         if ser_in.isOpen():
-            ser_in.readline(0.1)
+            ser_in.read()
         ser_in.close()
 
         self.move_next()
