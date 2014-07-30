@@ -15,18 +15,20 @@ class UartReadWriteMenu(Menu):
     def show_text(self):
         self.show_menu()
 
+        self.write_value = "Hello World!"
+
         ser_out = serial.Serial(port = self.uart_to_device(self.current_tx()), baudrate = 9600)
         ser_out.close()
         ser_out.open()
         if ser_out.isOpen():
-            ser_out.write("Hello World!")
-        ser_out.close()
+            ser_out.write(write_value)
 
-        ser_in = serial.Serial(port = self.uart_to_device(self.current_rx()), timeout = 0.1, baudrate = 9600)
-        ser_in.close()
+        ser_in = serial.Serial(port = self.uart_to_device(self.current_rx()), baudrate = 9600)
         ser_in.open()
         if ser_in.isOpen():
-            ser_in.read()
+            self.read_value = ser_in.read()
+
+        ser_out.close()
         ser_in.close()
 
         self.move_next()
@@ -49,9 +51,9 @@ class UartReadWriteMenu(Menu):
         self.uart_index = (self.uart_index + 1) % len(self.tx_to_rx)
 
     def show_menu(self):
-        self.screen.addstr(self.current_tx() + ' -> ' + self.current_rx())
+        self.screen.addstr(self.current_tx() + '(' + self.write_value + ')' + ' -> ' + self.current_rx() + '(' + self.write_value + ')')
         self.show_quit(2)
         self.screen.refresh()
 
     def delay(self):
-        return 100
+        return 1000
