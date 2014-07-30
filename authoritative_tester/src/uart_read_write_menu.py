@@ -13,8 +13,6 @@ class UartReadWriteMenu(Menu):
         self.setup_uarts()
 
     def show_text(self):
-        self.show_menu()
-
         self.write_value = "Hello World!"
 
         ser_out = serial.Serial(port = self.uart_to_device(self.current_tx()), baudrate = 9600)
@@ -30,6 +28,8 @@ class UartReadWriteMenu(Menu):
 
         ser_out.close()
         ser_in.close()
+
+        self.show_menu()
 
         self.move_next()
 
