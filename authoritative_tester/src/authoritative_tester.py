@@ -18,8 +18,8 @@ if __name__ == '__main__':
     screen = init_screen()
     main_menu = MainMenu(screen, {
         'Test Analog Jacks': (lambda: AnalogMenu(screen, JACK_TO_ANALOG)),
-        'Test GPIO Output': (lambda: GpioBlinkMenu(screen, JACK_TO_GPIO)),
-        'Test PWM Output': (lambda: PwmDimMenu(screen, JACK_TO_PWM)),
-        'Test UART Output': (lambda: UartReadWriteMenu(screen, UART_TX_TO_UART_RX)),
+        'Test GPIO Outputs': (lambda: GpioBlinkMenu(screen, JACK_TO_GPIO)),
+        'Test PWM Outputs': (lambda: PwmDimMenu(screen, JACK_TO_PWM)),
+        'Test UART Outputs': (lambda: UartReadWriteMenu(screen, UART_TX_TO_UART_RX)),
     })
     main_menu.show()

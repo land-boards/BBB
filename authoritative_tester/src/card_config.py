@@ -18,6 +18,7 @@ JACK_TO_GPIO = {
 UART_TX_TO_UART_RX = {
     'UART1': 'UART1',
     'UART2': 'UART4',
+    'UART4': 'UART2',
 }
 
 JACK_TO_PWM = {
