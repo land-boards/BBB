@@ -1,5 +1,5 @@
 import Adafruit_BBIO.PWM as PWM
- import time
+import time
 
 J18 = 'P8_19'
 J25 = 'P8_13'
