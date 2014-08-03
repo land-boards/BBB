@@ -16,7 +16,7 @@ while True:
 	PWM.stop('P8_19')
 	PWM.cleanup()
 	dutyCycle = 0.0
-	PWM.start('P8_19')
+	PWM.start('P8_19',0)
 #	PWM.start('P8_19', 0.0, 1000, 1)
 #	time.sleep(0.1)
 	print 'thru'
