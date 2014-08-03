@@ -8,7 +8,7 @@ while True:
 	dutyCycle = 0.0
 	PWM.start(J18, dutyCycle, 1000, 1)
 	time.sleep(0.1)
-	priny 'thru'
+	print 'thru'
 	while dutyCycle < 100.0:
 		PWM.set_duty_cycle(J18, dutyCycle)
 		time.sleep(0.1)
