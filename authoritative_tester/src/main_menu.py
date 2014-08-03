@@ -13,7 +13,7 @@ class MainMenu(Menu):
         self.update_highlighted_if_necessary()
         self.draw_options()
 
-        self.screen.addstr(self.len_options()+1, 0, 'Hit ">" to run highlighted option')
+        self.screen.addstr(self.len_options()+1, 0, 'Hit right arrow to run highlighted option')
         self.show_quit(self.len_options()+2)
 
     def delay(self):
