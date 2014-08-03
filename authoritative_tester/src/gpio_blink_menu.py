@@ -30,7 +30,7 @@ class GpioBlinkMenu(Menu):
         self.move_next()
 
     def show_menu(self):
-        self.screen.addstr("Blinking!")
+        self.screen.addstr("Cycling between LEDs!")
         self.show_quit(2)
         self.screen.refresh()
 
