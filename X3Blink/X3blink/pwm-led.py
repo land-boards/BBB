@@ -8,7 +8,7 @@ while True:
 	PWM.stop('P8_13')
 	PWM.cleanup()
 	dutyCycle = 0.0
-	PWM.start('P8_13', dutyCycle, 1000, 1)
+	PWM.start('P8_13', 0.0, 1000, 1)
 	time.sleep(0.1)
 	while dutyCycle < 100.0:
 		PWM.set_duty_cycle('P8_13', dutyCycle)
