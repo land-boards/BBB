@@ -4,12 +4,11 @@ import time
 J18 = 'P8_19'
 J25 = 'P8_13'
 
-dutyCycle = 0.0
-
 while True:
 	dutyCycle = 0.0
 	PWM.start(J18, dutyCycle, 1000, 1)
 	time.sleep(0.1)
+	priny 'thru'
 	while dutyCycle < 100.0:
 		PWM.set_duty_cycle(J18, dutyCycle)
 		time.sleep(0.1)
