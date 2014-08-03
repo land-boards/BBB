@@ -4,6 +4,8 @@ import time
 J18 = 'P8_19'
 J25 = 'P8_13'
 
+dutyCycle = 0.0
+
 #optionally, you can set the frequency as well as the polarity from their defaults:
 PWM.start(J18, dutyCycle, 1000, 1)
 PWM.start(J25, dutyCycle, 1000, 1)
