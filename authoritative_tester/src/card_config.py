@@ -1,4 +1,4 @@
-CARD_VERSION = 'v2'
+CARD_VERSION = 'X3'
 
 JACK_TO_GPIO = {
     'J9': 'GPIO3_19',
