@@ -1,5 +1,4 @@
 import Adafruit_BBIO.PWM as PWM
-import Adafruit_BBIO.GPIO as GPIO
 import time
 
 J18 = 'P8_19'
