@@ -1,3 +1,4 @@
+import Adafruit_BBIO.ADC as ADC
 import Adafruit_BBIO.GPIO as GPIO
 import time
 
