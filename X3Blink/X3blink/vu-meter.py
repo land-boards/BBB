@@ -19,6 +19,7 @@ GPIO.setup(J22, GPIO.OUT)
 GPIO.setup(J26, GPIO.OUT)
 GPIO.setup(J27, GPIO.OUT)
 GPIO.setup(J28, GPIO.OUT)
+ADC.setup()
 
 while True:
 	value = ADC.read("AIN1")
