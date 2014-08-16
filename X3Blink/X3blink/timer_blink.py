@@ -16,7 +16,7 @@ def blinkLED(channel):
 GPIO.setup(J29, GPIO.OUT)
 GPIO.setup(J30, GPIO.OUT)
 GPIO.setup(J31, GPIO.OUT)
-GPIO.setup(J28, GPIO.OUT)
+GPIO.setup(J32, GPIO.OUT)
 
 while True:
 	blinkLED(J29)
