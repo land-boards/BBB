@@ -10,7 +10,7 @@ J32 = "TIMER4"		# TIMER4
 
 def blinkLED(channel):
 	GPIO.output(channel, GPIO.HIGH)
-	time.sleep(0.1)
+	time.sleep(0.25)
 	GPIO.output(channel, GPIO.LOW)
 	
 GPIO.setup(J29, GPIO.OUT)
