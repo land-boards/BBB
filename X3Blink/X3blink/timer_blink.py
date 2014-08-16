@@ -4,7 +4,7 @@ import time
 
 J29 = "TIMER6"		# TIMER6
 J30 = "TIMER5"		# TIMER5
-J21 = "TIMER7"		# TIMER7
+J31 = "TIMER7"		# TIMER7
 J32 = "TIMER4"		# TIMER4
 
 
