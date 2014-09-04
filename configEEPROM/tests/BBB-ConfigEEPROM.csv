@@ -1,0 +1,13 @@
+configEEPROM Data File									
+Name	Offset	Size (bytes)	Value						
+Header	0	4	"0xAA,0x55,0x33,0xEE"						
+EEPROM Revision	4	2	A1						
+Board Name	6	32	BBB-GVS						
+Version	38	4	X4						
+Manufacturer	42	16	land-boards.com						
+Part Number	58	16	BBB-GVS						
+Number of Pins	74	2							
+Serial Number	76	12	301400010001						
+Offset	Conn	Name	Pin Usage	Type	Slew	RX	PU-PD	PU/DEN	Mux Mode
+88	P9-22	UART2_RXD							
+90	P9-21	UART2_TXD							
