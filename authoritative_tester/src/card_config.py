@@ -10,7 +10,6 @@ JACK_TO_GPIO = {
     'J20': 'GPIO0_27',
     'J21': 'GPIO1_14',
     'J22': 'GPIO1_15',
-    'J25': 'GPIO0_26',
     'J26': 'GPIO0_26',
     'J27': 'GPIO1_13',
     'J28': 'GPIO1_12',
