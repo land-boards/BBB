@@ -13,10 +13,10 @@ JACK_TO_GPIO = {
     'J26': 'GPIO0_26',
     'J27': 'GPIO1_13',
     'J28': 'GPIO1_12',
-    'J29': 'TIMER6',
-    'J30': 'TIMER5',
-    'J31': 'TIMER7',
-    'J32': 'TIMER4',
+    'J29': 'TIMER5',
+    'J30': 'TIMER7',
+    'J31': 'TIMER4',
+    'J32': 'TIMER6',
 }
 
 UART_TX_TO_UART_RX = {
