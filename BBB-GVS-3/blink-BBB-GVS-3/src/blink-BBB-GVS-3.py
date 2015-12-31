@@ -15,10 +15,11 @@ J16 = "GPIO1_14"
 J17 = "GPIO1_15"
 J18 = "GPIO0_23"
 J19 = "GPIO1_12"
-J20 = "GPIO2_5"
-J21 = "GPIO2_4"
-J22 = "GPIO2_2"
-J23 = "GPIO2_3"
+J20 = "GPIO1_13"
+J21 = "GPIO2_5"
+J22 = "GPIO2_4"
+J23 = "GPIO2_2"
+J24 = "GPIO2_3"
 
 def blinkLED(channel):
 	GPIO.output(channel, GPIO.HIGH)
