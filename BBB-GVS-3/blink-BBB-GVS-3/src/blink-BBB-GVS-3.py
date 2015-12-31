@@ -22,7 +22,7 @@ J23 = "GPIO2_3"
 
 def blinkLED(channel):
 	GPIO.output(channel, GPIO.HIGH)
-	time.sleep(0.1)
+	time.sleep(0.25)
 	GPIO.output(channel, GPIO.LOW)
 	
 GPIO.setup(J1, GPIO.OUT)
