@@ -34,7 +34,7 @@ def blinkLEDHigh(channel):
 	time.sleep(0.25)
 	GPIO.output(channel, GPIO.LOW)
 	
-def blinkLEDHLow(channel):
+def blinkLEDLow(channel):
 	GPIO.output(channel, GPIO.LOW)
 	time.sleep(0.25)
 	GPIO.output(channel, GPIO.HIGH)
