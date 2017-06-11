@@ -25,9 +25,9 @@ J26 = "P8_14"
 J27 = "P8_11"
 J28 = "P8_12"
 J29 = "P8_9"
-J30 = "GPIO2_3"
-J31 = "GPIO1_3"
-J32 = "GPIO2_4"
+J30 = "P8_8"
+J31 = "P8_6"
+J32 = "P8_10"
 
 def blinkLED(channel):
 	GPIO.output(channel, GPIO.HIGH)
