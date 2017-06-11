@@ -46,8 +46,6 @@ GPIO.setup(J11_3, GPIO.OUT)
 GPIO.setup(J11_4, GPIO.OUT)
 GPIO.setup(J12_3, GPIO.OUT)
 GPIO.setup(J12_4, GPIO.OUT)
-# GPIO.setup(J13_3, GPIO.OUT)
-# GPIO.setup(J13_4, GPIO.OUT)
 GPIO.setup(J14, GPIO.OUT)
 GPIO.setup(J15, GPIO.OUT)
 GPIO.setup(J16_3, GPIO.OUT)
@@ -68,19 +66,17 @@ GPIO.setup(J31, GPIO.OUT)
 GPIO.setup(J32, GPIO.OUT)
 
 while True:
-	blinkLEDHigh(J8)
-	blinkLEDHigh(J9)
-	blinkLEDHigh(J10)
-	blinkLEDHigh(J11_3)
-	blinkLEDLow(J11_4)
-	blinkLEDHigh(J12_3)
-	blinkLEDLow(J12_4)
-	# blinkLEDHigh(J13_3)
-	# blinkLEDHigh(J13_4)
-	blinkLEDHigh(J14)
-	blinkLEDHigh(J15)
-	blinkLEDHigh(J16_3)
-	blinkLEDLow(J16_4)
+	blinkLEDHigh(J8)	# Brd1D1
+	blinkLEDHigh(J9)	# Brd1D2
+	blinkLEDHigh(J10)	# Brd1D3
+	blinkLEDHigh(J11_3)	# Brd1D4
+	blinkLEDLow(J11_4)	# Brd1D5
+	blinkLEDLow(J12_3)	# Brd1D6
+	blinkLEDHigh(J12_4)	# Brd1D7
+	blinkLEDHigh(J14)	# Brd1D8
+	blinkLEDHigh(J15)	# Brd1D9
+	blinkLEDHigh(J16_3)	# Brd1D10
+	blinkLEDLow(J16_4)	# Brd1D11
 	blinkLEDHigh(J17)
 	blinkLEDHigh(J18)
 	blinkLEDHigh(J19)
