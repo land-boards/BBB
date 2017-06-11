@@ -82,8 +82,6 @@ while True:
 	blinkLED(J20)
 	blinkLED(J21)
 	blinkLED(J22)
-	blinkLED(J23)
-	blinkLED(J24)
 	blinkLED(J25)
 	blinkLED(J26)
 	blinkLED(J27)
