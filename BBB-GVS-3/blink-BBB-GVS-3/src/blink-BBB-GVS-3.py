@@ -1,7 +1,7 @@
 import Adafruit_BBIO.GPIO as GPIO
 import time
 
-J1 = " P9_30"
+J1 = "P9_30"
 J2 = "P9_27"
 J3_3 = "P9_26"
 J3_4 = "P9_24"
