@@ -27,6 +27,32 @@ J30 = "P8_8"
 J31 = "P8_7"
 J32 = "P8_10"
 
+D0 = "P9_30"
+D16 = "P9_27"
+D1 = "P9_23"
+D17 = "P9_24"
+D2 = "P9_26"
+D18 = "P9_21"
+D3 = "P9_22"
+D19 = "P9_15"
+D4 = "P9_12"
+D20 = "P9_13"
+D5 = "P9_11"
+D21 = "P8_26"
+D6 = "P8_19"
+D22 = "P8_18"
+D7 = "P8_17"
+D23 = "P8_16"
+D8 = "P8_15"
+D24 = "P8_13"
+D9 = "P8_14"
+D25 = "P8_11"
+D10 = "P8_12"
+D26 = "P8_9"
+D11 = "P8_8"
+D27 = "P8_7"
+D12 = "P8_10"
+
 def blinkLEDHigh(channel):
 	GPIO.output(channel, GPIO.HIGH)
 	time.sleep(0.25)
@@ -37,55 +63,55 @@ def blinkLEDLow(channel):
 	time.sleep(0.25)
 	GPIO.output(channel, GPIO.HIGH)
 	
-GPIO.setup(J8, GPIO.OUT)
-GPIO.setup(J9, GPIO.OUT)
-GPIO.setup(J10, GPIO.OUT)
-GPIO.setup(J11_3, GPIO.OUT)
-GPIO.setup(J11_4, GPIO.OUT)
-GPIO.setup(J12_3, GPIO.OUT)
-GPIO.setup(J12_4, GPIO.OUT)
-GPIO.setup(J14, GPIO.OUT)
-GPIO.setup(J15, GPIO.OUT)
-GPIO.setup(J16_3, GPIO.OUT)
-GPIO.setup(J16_4, GPIO.OUT)
-GPIO.setup(J17, GPIO.OUT)
-GPIO.setup(J18, GPIO.OUT)
-GPIO.setup(J19, GPIO.OUT)
-GPIO.setup(J20, GPIO.OUT)
-GPIO.setup(J21, GPIO.OUT)
-GPIO.setup(J22, GPIO.OUT)
-GPIO.setup(J25, GPIO.OUT)
-GPIO.setup(J26, GPIO.OUT)
-GPIO.setup(J27, GPIO.OUT)
-GPIO.setup(J28, GPIO.OUT)
-GPIO.setup(J29, GPIO.OUT)
-GPIO.setup(J30, GPIO.OUT)
-GPIO.setup(J31, GPIO.OUT)
-GPIO.setup(J32, GPIO.OUT)
+GPIO.setup(D0, GPIO.OUT)
+GPIO.setup(D1, GPIO.OUT)
+GPIO.setup(D2, GPIO.OUT)
+GPIO.setup(D3, GPIO.OUT)
+GPIO.setup(D4, GPIO.OUT)
+GPIO.setup(D5, GPIO.OUT)
+GPIO.setup(D6, GPIO.OUT)
+GPIO.setup(D7, GPIO.OUT)
+GPIO.setup(D8, GPIO.OUT)
+GPIO.setup(D9, GPIO.OUT)
+GPIO.setup(D10, GPIO.OUT)
+GPIO.setup(D11, GPIO.OUT)
+GPIO.setup(D12, GPIO.OUT)
+GPIO.setup(D16, GPIO.OUT)
+GPIO.setup(D17, GPIO.OUT)
+GPIO.setup(D18, GPIO.OUT)
+GPIO.setup(D19, GPIO.OUT)
+GPIO.setup(D20, GPIO.OUT)
+GPIO.setup(D21, GPIO.OUT)
+GPIO.setup(D22, GPIO.OUT)
+GPIO.setup(D23, GPIO.OUT)
+GPIO.setup(D24, GPIO.OUT)
+GPIO.setup(D25, GPIO.OUT)
+GPIO.setup(D26, GPIO.OUT)
+GPIO.setup(D27, GPIO.OUT)
 
 while True:
-	blinkLEDHigh(J8)	# Brd1D1
-	blinkLEDHigh(J9)	# Brd1D2
-	blinkLEDHigh(J10)	# Brd1D3
-	blinkLEDHigh(J11_3)	# Brd1D4
-	blinkLEDLow(J11_4)	# Brd1D5
-	blinkLEDLow(J12_3)	# Brd1D6
-	blinkLEDHigh(J12_4)	# Brd1D7
-	blinkLEDHigh(J14)	# Brd1D8
-	blinkLEDHigh(J15)	# Brd1D9
-	blinkLEDHigh(J16_3)	# Brd1D10
-	blinkLEDLow(J16_4)	# Brd1D11
-	blinkLEDHigh(J17)
-	blinkLEDHigh(J18)
-	blinkLEDHigh(J19)
-	blinkLEDHigh(J20)
-	blinkLEDHigh(J21)
-	blinkLEDHigh(J22)
-	blinkLEDHigh(J25)
-	blinkLEDHigh(J26)
-	blinkLEDHigh(J27)
-	blinkLEDHigh(J28)
-	blinkLEDHigh(J29)
-	blinkLEDHigh(J30)
-	blinkLEDHigh(J31)
-	blinkLEDHigh(J32)
+	blinkLEDHigh(D0)
+	blinkLEDHigh(D1)
+	blinkLEDHigh(D2)
+	blinkLEDHigh(D3)
+	blinkLEDLow(D4)
+	blinkLEDLow(D5)
+	blinkLEDHigh(D6)
+	blinkLEDHigh(D7)
+	blinkLEDHigh(D8)
+	blinkLEDHigh(D9)
+	blinkLEDLow(D10)
+	blinkLEDHigh(D11)
+	blinkLEDHigh(D12)
+	blinkLEDHigh(D27)
+	blinkLEDHigh(D26)
+	blinkLEDHigh(D25)
+	blinkLEDHigh(D24)
+	blinkLEDHigh(D23)
+	blinkLEDHigh(D22)
+	blinkLEDHigh(D21)
+	blinkLEDHigh(D20)
+	blinkLEDHigh(D19)
+	blinkLEDHigh(D18)
+	blinkLEDHigh(D17)
+	blinkLEDHigh(D16)
