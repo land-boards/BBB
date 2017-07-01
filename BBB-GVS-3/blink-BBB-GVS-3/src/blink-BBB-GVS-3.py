@@ -59,7 +59,7 @@ def blinkLED(channel):
 	time.sleep(0.25)
 	GPIO.output(channel, GPIO.LOW)
 	
-GPIO.setup(DO, GPIO.OUT)
+GPIO.setup(D0, GPIO.OUT)
 GPIO.setup(D1, GPIO.OUT)
 GPIO.setup(D2, GPIO.OUT)
 GPIO.setup(D3, GPIO.OUT)
