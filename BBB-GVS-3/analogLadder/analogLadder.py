@@ -42,4 +42,4 @@ if val6 < 0.87 or val6 > 0.88:
 if errors == True:
 	print 'Had errors'
 else:
-	print 'No errors'
+	print 'PASS - Analog values match expected ladder values'
