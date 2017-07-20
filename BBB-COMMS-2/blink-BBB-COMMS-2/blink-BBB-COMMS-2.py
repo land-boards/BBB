@@ -69,7 +69,7 @@ while True:
 	blinkLEDHigh(H7_3)
 	blinkLEDHigh(H8_3)
 	blinkLEDHigh(H9_3)
-		blinkLEDHigh(H11)
+	blinkLEDHigh(H11)
 	blinkLEDHigh(H13)
 	blinkLEDHigh(H15)
 	blinkLEDHigh(H17)
