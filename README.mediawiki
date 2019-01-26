@@ -8,22 +8,29 @@ Add 5V I/O to the BeagleBone Black.
 
 == Folders ==
 
-* These are the code that we run to test Land Boards, LLC BBB cards
+* These are the Python code files that we run to test [http://land-boards.com/blwiki/index.php?title=Main_Page#Beaglebone_Capes Land Boards, LLC BeagleBone Capes]
 
 === BBB-COMMS-2 ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2 BBB-COMMS-2 card]
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2 BBB-COMMS-2 cape]
 
 === BBB-GVS ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS BBB-GVS card]
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS BBB-GVS cape]
 
 === BBB-GVS-3 ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 card]
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 cape]
 
 === BBCape_EEPROM ===
+
+* Code to configure Cape EEPROMs
+* Used to identify the functions of the card to the Device Tree Overlay
+
 === X3Blink ===
+
+* Blink an LED on the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 capr]
+
 === analog_test ===
 === authoritative_tester ===
 === bbbIot ===
