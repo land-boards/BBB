@@ -2,9 +2,9 @@
 
 * These are our [http://land-boards.com/blwiki/index.php?title=Main_Page#Beaglebone_Capes BeagleBone Capes] Code files.
 
-<img src="http://land-boards.com/blwiki/images/9/9c/BBB-GVS-3_6135-640px.jpg" alt="BBB-GVS-3 card"></img>
+Add 3.3V/5V I/O to the BeagleBone Black depending on cape version.
 
-Add 5V I/O to the BeagleBone Black.
+<img src="http://land-boards.com/blwiki/images/9/9c/BBB-GVS-3_6135-640px.jpg" alt="BBB-GVS-3 card"></img>
 
 == Folders ==
 
@@ -32,13 +32,28 @@ Add 5V I/O to the BeagleBone Black.
 * Blink an LED on the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 capr]
 
 === analog_test ===
+
+* Test the analog input lines
+
 === authoritative_tester ===
+
+* Exercise analog inputs, digital I/O lines, PWM lines and the UART
+
 === bbbIot ===
+
+* Simple code to talk to the low level bits of a BBB
+
 === blink ===
+
+* Exercise 8 GPIO lines to blink LEDs
+
 === configEEPROM ===
+
+* Utilities to configure the Cape personality EEPROM
+
 === mkeeprom ===
-=== setup.py ===
-=== switch ===
+
+* Code to make the EEPROM
 
 == Ownership ==
 
