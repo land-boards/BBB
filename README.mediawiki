@@ -2,7 +2,7 @@
 
 * These are our [http://land-boards.com/blwiki/index.php?title=Main_Page#Beaglebone_Capes BeagleBone Capes] Code files.
 
-http://land-boards.com/blwiki/images/9/9c/BBB-GVS-3_6135-640px.jpg
+[http://land-boards.com/blwiki/images/9/9c/BBB-GVS-3_6135-640px.jpg]
 
 Add 5V I/O to the BeagleBone Black.
 
