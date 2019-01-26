@@ -1,0 +1,46 @@
+== land-boards BeagleBone Black Cape Code ==
+
+* These are our [http://land-boards.com/blwiki/index.php?title=Main_Page#Beaglebone_Capes BeagleBone Capes] Code files.
+
+<embedvideo service="youtube">https://youtu.be/AXvZoqxch_M</embedvideo> 
+
+Add 5V I/O to the BeagleBone Black.
+
+== Folders ==
+
+* These are the code that we run to test Land Boards, LLC BBB cards
+
+=== BBB-COMMS-2 ===
+
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2 BBB-COMMS-2 card]
+
+=== BBB-GVS ===
+
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS BBB-GVS card]
+
+=== BBB-GVS-3 ===
+
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 card]
+
+=== BBCape_EEPROM ===
+=== X3Blink ===
+=== analog_test ===
+=== authoritative_tester ===
+=== bbbIot ===
+=== blink ===
+=== configEEPROM ===
+=== mkeeprom ===
+=== setup.py ===
+=== switch ===
+
+== Ownership ==
+
+* Some of these files (particularly libraries) were created by others.
+** There may be newer versions of these libraries "out there".
+** Some libraries even have the same names but don't work the same.
+* Many of these files were created by us based on the work of others.
+
+=== Warning ===
+
+* Use at your own risk.
+** If you brick your part or it melts to a puddle, it's on you not us.
