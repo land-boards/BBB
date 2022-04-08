@@ -16,15 +16,15 @@ Add 3.3V/5V I/O to the BeagleBone Black depending on cape version.
 
 === BBB-COMMS-2 ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2 BBB-COMMS-2 cape]
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2 BBB-COMMS-2 Wiki page]
 
 === BBB-GVS ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS BBB-GVS cape]
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS BBB-GVS Wiki page]
 
 === BBB-GVS-3 ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 cape]
+* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 Wiki page]
 
 === BBCape_EEPROM ===
 
