@@ -16,15 +16,18 @@ Add 3.3V/5V I/O to the BeagleBone Black depending on cape version.
 
 === BBB-COMMS-2 ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2 BBB-COMMS-2 Wiki page]
+* [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2 BBB-COMMS-2 Wiki page]
+* [https://www.tindie.com/products/9902/ BBB-COMMS-2 on Tindie store]
 
 === BBB-GVS ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS BBB-GVS Wiki page]
+* [http://land-boards.com/blwiki/index.php?title=BBB-GVS BBB-GVS Wiki page]
+* [https://www.tindie.com/products/3168/  BBB-GVS on Tindie store]
 
 === BBB-GVS-3 ===
 
-* Code for the [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 Wiki page]
+* [http://land-boards.com/blwiki/index.php?title=BBB-GVS-3 BBB-GVS-3 Wiki page]
+* [https://www.tindie.com/products/7167/ BBB-GVS-3 on Tindie store]
 
 === BBCape_EEPROM ===
 
