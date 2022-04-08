@@ -1,4 +1,45 @@
 <img src="http://land-boards.com/blwiki/images/b/b9/BBB-COMMS-2_I2CIO-8_Test-Setup_720px.png"></img>
 
+=== Hardware ===
+
 * [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2#I2C_Testing BBB-COMMS-2 I2C Testing]
 * [http://land-boards.com/blwiki/index.php?title=I2CIO-8 I2CIO-8 card Wiki page]
+
+=== Enable I2C Bus ===
+
+* [http://land-boards.com/blwiki/index.php?title=BeagleBone#Enable_the_I2C_devices_on_the_BeagleBone_Black_Rev_C How-To enable the I2C devices on the BeagleBone Black Rev C]
+** [https://sites.google.com/a/cameon.net/beaglebone/home/i2c-devices Enable the I2C devices on the BeagleBone Black]
+* Physically connected to I2C1 port on the BBB-COMMS-2 card but is I2C-2 from the software
+* Probe I2C bus 2
+<pre>
+i2cdetect -y -r 2
+
+</pre>
+* Card shows up at 0x20
+<pre>
+root@beaglebone:~/BBB/MCP23008# i2cdetect -y -r 2
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+</pre>
+
+=== Run Example Code ===
+
+* [https://github.com/land-boards/BBB/tree/master/MCP23008 MCP23008_ex.py - Example code]
+* Run using
+<pre>
+python MCP23008_ex.py
+
+</pre>
+
+=== I2C Timing ===
+
+* 100 KHz
+
+<img src="http://land-boards.com/blwiki/images/f/f6/I2C_Testing-01.PNG"></img>
