@@ -8,7 +8,7 @@
 # Run using
 #	python MCP23008_ex.py
 #
-# Edit /boot/uboot/uEnv.txt
+# On Rev C card, edit /boot/uboot/uEnv.txt
 # 	nano /boot/uboot/uEnv.txt
 # 	optargs=quiet drm.debug-7 capemgr.enable_partno=BB-I2C0,BB-I2C1,BB-I2C2
 
@@ -37,8 +37,7 @@ def main():
 
     i2cbus.write_byte_data(i2caddress, IOCON, 0x02)  # Update configuration register
 
-    i2cbus.write_word_data(i2caddress, IODIR, 0xFF00)  # Set Port A as outputs and Port B as
- inputs
+    i2cbus.write_byte_data(i2caddress, IODIR, 0xFF)  # Set Pins as outputs
 
     while (True):
         # portb = i2cbus.read_byte_data(i2caddress, GPIO)  # Read the value of Port B
