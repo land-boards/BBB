@@ -1,1 +1,1 @@
-<img src = "http://land-boards.com/blwiki/images/b/b9/BBB-COMMS-2_I2CIO-8_Test-Setup_720px.png"></img>
+<img src="http://land-boards.com/blwiki/images/b/b9/BBB-COMMS-2_I2CIO-8_Test-Setup_720px.png"></img>
