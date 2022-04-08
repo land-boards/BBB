@@ -1,1 +1,4 @@
 <img src="http://land-boards.com/blwiki/images/b/b9/BBB-COMMS-2_I2CIO-8_Test-Setup_720px.png"></img>
+
+* [http://land-boards.com/blwiki/index.php?title=BBB-COMMS-2#I2C_Testing BBB-COMMS-2 I2C Testing]
+* [http://land-boards.com/blwiki/index.php?title=I2CIO-8 I2CIO-8 card Wiki page]
